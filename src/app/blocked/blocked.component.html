@@ -1,0 +1,17 @@
+<ul class="list-group" *ngFor="let item of items; let i = index">
+  <li class="list-group-item d-flex justify-content-between">
+    <p class="p-0 m-0 flex-grow-1">{{ item }}</p>
+    <button class="btn btn-sm btn-outline-primary" (click)="todo(i)">
+      Todo
+    </button>
+    <button class="btn btn-sm btn-outline-primary" (click)="inprogress(i)">
+      Inprogress
+    </button>
+    <button class="btn btn-sm btn-outline-primary" (click)="done(i)">
+      Done
+    </button>
+    <button class="btn btn-sm btn-outline-danger" (click)="remove(i)">
+      Remove
+    </button>
+  </li>
+</ul>
